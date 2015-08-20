@@ -45,4 +45,15 @@ kvo
       //do something...
     }
 }
-－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－----------notification
+
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(func) name:@"notifiName" object:nil]
+- (void)dealloc {
+[[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)func:(obj *)param {
+- }
+
+
+
