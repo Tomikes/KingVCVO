@@ -57,7 +57,7 @@ kvo
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 在世界的某个角落发送通知。。。
 
-- (void)getNotofocation{
+- (void)postMessage{
     NSLog(@"get it.");
     //发出通知
     [[NSNotificationCenter defaultCenter] postNotificationName:@"A类通知" object:self];
